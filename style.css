@@ -1,0 +1,25 @@
+body {
+    background-color:aqua;
+    color:darkslategray;
+}
+
+.Image {
+
+    font-size: 25px;
+    width: 70%;
+}
+
+.size, #result_object_name, #result_object_accuracy {
+
+    font-size: 15px;
+    color:forestgreen;
+    font-weight: bold;
+}
+
+#camera, #result{
+
+    height: 300px;
+    width: 295px;
+    border:steelblue 2px solid ;
+}
+

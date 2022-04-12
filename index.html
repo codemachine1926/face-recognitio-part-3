@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>face recognition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <center>
+
+<b>
+  <h1 class="btn btn-default Image"><marquee behavior="alternate">Image recognition</marquee></h1><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p><br>
+<b>
+      <h3 class="size">Tanish</h3><hr width="70%">
+      <h3 class="size">Tanish's Father (Shobhit)</h3><hr width="70%">
+      <h3 class="size">Tanish's Mother (Esha)</h3><hr width="70%">
+      <h3 class="size">Tanish's small sister (Aashvi)</h3><hr width="70%">
+      </b>
+
+      <label><font color="red">Webcam View - </font></label>
+
+      <div id="camera"></div>
+      <div id="result"></div>
+
+      <br><br>
+
+      <button onclick="take_snapshot()" class="btn btn-info">Capture Image</button>
+
+      <br><br>
+
+      <button onclick="identify_image()" class="btn btn-success">Identify Image</button>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Person : <span id="result_object_name"></span></p>
+      <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span></p>
+     
+    </b>
+    </center>
+
+  </div>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
